@@ -37,14 +37,15 @@ export default class LoginUser extends Component{
                        }
                    </Form.Item>
                    <Form.Item>
-                       {/* {getFieldDecorator("remember",{
-                           initialValue:true,
+                       {getFieldDecorator("remember",{
+                           valuePropName: 'checked',
+                           initialValue: true,
                        })(<Checkbox>记住我</Checkbox>)
-                       } */}
+                       }
                         <a className="login-form-forgot" href="">忘记密码</a>
                         <Button type="primary" htmlType="submit" className="login-form-button">登录</Button>
                         Or
-                        <a>立即注册</a>
+                        <a href=""> 立即注册</a>
                    </Form.Item>
                </Form>
             </div>
